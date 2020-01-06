@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jvn-dc-QyV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw3-cc-sOn">
+                                <rect key="frame" x="56.5" y="454.5" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RMb-qQ-SYV"/>
+                                </constraints>
+                                <state key="normal" title="Quiz">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Gh-kd-ErT"/>
+                                    <segue destination="HEo-e3-Po8" kind="show" id="9Tw-IP-rw2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7p-5b-fUs">
+                                <rect key="frame" x="56.5" y="389" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mvy-mQ-EF0"/>
+                                </constraints>
+                                <state key="normal" title="Learn Programming Language">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wqa-2b-pBP" kind="show" id="diV-lK-8Cf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7e-H3-P13">
+                                <rect key="frame" x="56.5" y="517" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ESd-dJ-RZW"/>
+                                </constraints>
+                                <state key="normal" title="Feedback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NhO-xo-Qki"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Java-vs-PHP-for-Enterprise-Application-Development.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JkG-xv-xq5">
+                                <rect key="frame" x="37.5" y="114" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JkG-xv-xq5" secondAttribute="height" multiplier="1:0.5" id="g2M-IX-MKw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programming Interview Quest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1o-v6-I9g">
+                                <rect key="frame" x="0.0" y="264" width="375" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e7e-H3-P13" firstAttribute="centerX" secondItem="Zw3-cc-sOn" secondAttribute="centerX" id="4jb-0H-fX6"/>
+                            <constraint firstItem="e7e-H3-P13" firstAttribute="width" secondItem="Zw3-cc-sOn" secondAttribute="width" id="53x-RG-63x"/>
+                            <constraint firstItem="JkG-xv-xq5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ClM-CU-3Ck"/>
+                            <constraint firstItem="z1o-v6-I9g" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="FQ6-cQ-uOr"/>
+                            <constraint firstItem="e7e-H3-P13" firstAttribute="top" secondItem="Zw3-cc-sOn" secondAttribute="bottom" constant="12.5" id="Gj1-yp-rju"/>
+                            <constraint firstItem="Zw3-cc-sOn" firstAttribute="top" secondItem="Q7p-5b-fUs" secondAttribute="bottom" constant="15.5" id="HHh-CA-yAo"/>
+                            <constraint firstItem="z1o-v6-I9g" firstAttribute="top" secondItem="JkG-xv-xq5" secondAttribute="bottom" id="IrP-oE-Evr"/>
+                            <constraint firstItem="Q7p-5b-fUs" firstAttribute="centerX" secondItem="Zw3-cc-sOn" secondAttribute="centerX" id="RGw-ib-058"/>
+                            <constraint firstItem="Zw3-cc-sOn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="W8O-Jb-zLn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e7e-H3-P13" secondAttribute="bottom" constant="100" id="Wn0-Jr-FL2"/>
+                            <constraint firstItem="JkG-xv-xq5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fx2-Lk-11m"/>
+                            <constraint firstItem="Q7p-5b-fUs" firstAttribute="width" secondItem="Zw3-cc-sOn" secondAttribute="width" id="kem-qN-x7t"/>
+                            <constraint firstItem="z1o-v6-I9g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lYe-Ic-mu6"/>
+                            <constraint firstItem="JkG-xv-xq5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="sfJ-B0-jeO"/>
+                            <constraint firstItem="Zw3-cc-sOn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tAM-Ql-5tq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lh2-1g-6sA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xpc-9v-Nrd">
+            <objects>
+                <viewController id="Wqa-2b-pBP" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vb2-fW-KTL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-S1-3SL">
+                                <rect key="frame" x="56.5" y="454.5" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jfn-DT-4MJ"/>
+                                </constraints>
+                                <state key="normal" title="PHP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZHh-3a-DBg" kind="show" id="vOU-uZ-OAF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWG-Nf-Ca3">
+                                <rect key="frame" x="56.5" y="517" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BO6-BW-GFC"/>
+                                </constraints>
+                                <state key="normal" title="C Language">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9Fp-O0-3Kd" kind="show" id="w1v-m8-81q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFN-Q9-fSf">
+                                <rect key="frame" x="56.5" y="389" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qID-cF-g6I"/>
+                                </constraints>
+                                <state key="normal" title="JAVA">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="j8l-Jv-otg" kind="show" id="NOU-ax-Fb1"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Java-vs-PHP-for-Enterprise-Application-Development.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Pf8-R3-cl1">
+                                <rect key="frame" x="37.5" y="115" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pf8-R3-cl1" secondAttribute="height" multiplier="1:0.5" id="hbj-l4-SNP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pLd-S1-3SL" firstAttribute="top" secondItem="bFN-Q9-fSf" secondAttribute="bottom" constant="15.5" id="1Ys-Av-QMw"/>
+                            <constraint firstItem="Pf8-R3-cl1" firstAttribute="width" secondItem="Pf8-R3-cl1" secondAttribute="height" multiplier="1:0.5" id="8R8-Wt-VoS"/>
+                            <constraint firstItem="sWG-Nf-Ca3" firstAttribute="top" secondItem="pLd-S1-3SL" secondAttribute="bottom" constant="12.5" id="HSF-8g-h03"/>
+                            <constraint firstItem="pLd-S1-3SL" firstAttribute="centerX" secondItem="hnR-v2-h7n" secondAttribute="centerX" id="LM2-TM-x71"/>
+                            <constraint firstItem="Pf8-R3-cl1" firstAttribute="width" secondItem="vb2-fW-KTL" secondAttribute="width" multiplier="0.8" id="QBE-AV-KNO"/>
+                            <constraint firstItem="sWG-Nf-Ca3" firstAttribute="centerX" secondItem="pLd-S1-3SL" secondAttribute="centerX" id="Tkt-i0-hnJ"/>
+                            <constraint firstItem="bFN-Q9-fSf" firstAttribute="width" secondItem="pLd-S1-3SL" secondAttribute="width" id="asu-cF-W57"/>
+                            <constraint firstItem="sWG-Nf-Ca3" firstAttribute="width" secondItem="pLd-S1-3SL" secondAttribute="width" id="b1h-mj-IGr"/>
+                            <constraint firstItem="Pf8-R3-cl1" firstAttribute="top" secondItem="hnR-v2-h7n" secondAttribute="top" constant="51" id="e8U-oM-0VG"/>
+                            <constraint firstItem="pLd-S1-3SL" firstAttribute="width" secondItem="vb2-fW-KTL" secondAttribute="width" multiplier="0.7" id="hSJ-cc-j8d"/>
+                            <constraint firstItem="Pf8-R3-cl1" firstAttribute="centerX" secondItem="hnR-v2-h7n" secondAttribute="centerX" id="lgS-w2-ryb"/>
+                            <constraint firstItem="bFN-Q9-fSf" firstAttribute="centerX" secondItem="pLd-S1-3SL" secondAttribute="centerX" id="prz-gs-qGS"/>
+                            <constraint firstItem="hnR-v2-h7n" firstAttribute="bottom" secondItem="sWG-Nf-Ca3" secondAttribute="bottom" constant="100" id="xY2-JT-dpA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hnR-v2-h7n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nw0-cr-JOA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bLT-do-epo">
+            <objects>
+                <viewController id="ZHh-3a-DBg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZiE-sG-cgL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuF-9r-ByG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JfQ-qz-d3h"/>
+                                </constraints>
+                                <state key="normal" title="PHP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXK-2f-mdT">
+                                <rect key="frame" x="0.0" y="144" width="375" height="523"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llf-kg-lin">
+                                        <rect key="frame" x="10" y="30" width="356.5" height="5092.5"/>
+                                        <string key="text">PHP Interview Question #1
+What’s the difference between the include() and require() functions?
+(Question provided by Laszlo Levente Mári)
+
+They both include a specific file but on require the process exits with a fatal error if the file can’t be included, while include statement may still pass and jump to the next step in the execution.
+
+PHP Interview Question #2
+How can we get the IP address of the client?
+(Question provided by Laszlo Levente Mári)
+
+This question might show you how playful and creative the candidate is because there are many options. $_SERVER["REMOTE_ADDR"]; is the easiest solution, but the candidate can write x line scripts for this question.
+
+PHP Interview Question #3
+What’s the difference between unset() and unlink()
+(Question provided by Laszlo Levente Mári)
+
+unset() sets a variable to “undefined” while unlink() deletes a file we pass to it from the file system.
+
+PHP Interview Question #4
+What is the output of the following code:
+
+$a = '1';
+$b = &amp;$a;
+$b = "2$b";
+echo $a.", ".$b;
+ PHP Developer Laszlo Levente Mári
+
+Author Bio
+Laszlo Levente Mári is an ex-Googler (front-end) and has taken several interview opportunities for fun. SitePoint Author, and full-stack developer at IDG where he is currently building the CMS of PCWorld.com. Hire Laszlo Now.
+
+PHP Interview Tip #2
+“During the interview of a potential candidate I am aiming to understand how updated they are with the new language features as well as their level of understanding of basic operations. In my opinion, this will define how good a developer will become in the future.” ~Agli Pançi, Lead Developer
+
+PHP Interview Question #5
+What are the main error types in PHP and how do they differ?
+(Question provided by Agli Pançi)
+
+In PHP there are three main type of errors:
+
+Notices – Simple, non-critical errors that are occurred during the script execution. An example of a Notice would be accessing an undefined variable.
+
+Warnings – more important errors than Notices, however the scripts continue the execution. An example would be include() a file that does not exist.
+
+Fatal – this type of error causes a termination of the script execution when it occurs. An example of a Fatal error would be accessing a property of a non-existent object or require() a non-existent file.
+
+Understanding the error types is very important as they help developers understand what is going on during the development, and what to look out for during debugging.
+
+PHP Interview Question #6
+What is the difference between GET and POST?
+(Question provided by Agli Pançi)
+
+GET displays the submitted data as part of the URL, during POST this information is not shown as it’s encoded in the request.
+GET can handle a maximum of 2048 characters, POST has no such restrictions.
+GET allows only ASCII data, POST has no restrictions, binary data are also allowed.
+Normally GET is used to retrieve data while POST to insert and update.
+Understanding the fundamentals of the HTTP protocol is very important to have for a PHP developer, and the differences between GET and POST are an essential part of it.
+
+PHP Interview Question #7
+How can you enable error reporting in PHP?
+(Question provided by Agli Pançi)
+
+Check if “display_errors” is equal “on” in the php.ini or declare “ini_set('display_errors', 1)” in your script.
+Then, include “error_reporting(E_ALL)” in your code to display all types of error messages during the script execution.
+
+Enabling error messages is very important especially during the debugging process as one can instantly get the exact line that is producing the error and can see also if the script in general is behaving correctly.
+
+PHP Interview Question #8
+What are Traits?
+(Question provided by Agli Pançi)
+
+Traits are a mechanism that allows you to create reusable code in languages like PHP where multiple inheritance is not supported. A Trait cannot be instantiated on its own.
+
+It’s important that a developer knows the powerful features of the language (s)he is working on, and Trait is one of such features.
+
+PHP Interview Question #9
+Can the value of a constant change during the script’s execution?
+(Question provided by Agli Pançi)
+
+No, the value of a constant cannot be changed once it’s declared during the PHP execution.
+
+PHP Interview Question #10
+Can you extend a Final defined class?
+(Question provided by Agli Pançi)
+
+No, you cannot extend a Final defined class. A Final class or method declaration prevents child class or method overriding.
+
+PHP Interview Question #11
+What are the __construct() and __destruct() methods in a PHP class?
+(Question provided by Agli Pançi)
+
+All objects in PHP have Constructor and Destructor methods built-in. The Constructor method is called immediately after a new instance of the class is being created, and it’s used to initialize class properties. The Destructor method takes no parameters.
+
+Understanding these two in PHP means that the candidate knows the very basics of OOP in PHP.
+
+PHP Interview Question #12
+How we can get the number of elements in an array?
+(Question provided by Agli Pançi)
+
+The count() function is used to return the number of elements in an array.
+
+Understanding of arrays and array related helper functions is important for any PHP developer.
+
+Agli Pançi Lead Developer PHP
+
+Author Bio
+Agli Pançi is the Lead Developer of Manoolia and the co-founder of Zero1 Community Albania. He is an expert in the following languages: Node.js, Linux, WordPress, and Laravel. Hire Agli Now.
+
+hire php developers
+
+Find top PHP developers today.
+Hire senior PHP developers on CodementorX for your team.
+
+PHP Interview Question #13
+How would you declare a function that receives one parameter name hello?
+If hello is true, then the function must print hello, but if the function doesn’t receive hello or hello is false the function must print bye.
+(Question provided by Oscar Andrés Monroy Medina)
+
+&lt;?php
+function showMessage($hello=false){
+  echo ($hello)?'hello':'bye';
+}
+?&gt;
+In this question, you can evaluate if the developer knows how to declare a function and how they would manage the fact of the parameter can or cannot be on the function call. You can also evaluate if the developer knows the if syntax and how to print text(echo function).
+
+PHP Interview Question #14
+The value of the variable input is a string 1,2,3,4,5,6,7. How would you get the sum of the integers contained inside input?
+(Question provided by Oscar Andrés Monroy Medina)
+
+&lt;?php
+echo array_sum(explode(',',$input));
+?&gt;
+The explode function is one of the most used functions in PHP, so it’s important to know if the developer knows this function. There is no unique answer to this question, but the answer must be similar to this one.
+
+PHP Interview Question #15
+Suppose you receive a form submitted by a post to subscribe to a newsletter. This form has only one field, an input text field named email. How would you validate whether the field is empty? Print a message "The email cannot be empty" in this case.
+(Question provided by Oscar Andrés Monroy Medina)
+
+&lt;?php
+if(empty($_POST['email'])){
+  echo "The email cannot be empty";
+}
+?&gt;
+In this question, the candidate should be evaluated on his/her knowledge about forms management and validation. There is not unique answer for this question, but it must be similar to this one.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17302721360000001" green="0.1772488773" blue="0.18397830309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="llf-kg-lin" secondAttribute="trailing" constant="10" id="EPp-ct-0lf"/>
+                                    <constraint firstItem="llf-kg-lin" firstAttribute="leading" secondItem="xXK-2f-mdT" secondAttribute="leading" constant="10" id="ck9-gU-KQN"/>
+                                    <constraint firstItem="llf-kg-lin" firstAttribute="top" secondItem="xXK-2f-mdT" secondAttribute="top" constant="30" id="oTB-1P-pNa"/>
+                                    <constraint firstAttribute="bottom" secondItem="llf-kg-lin" secondAttribute="bottom" constant="30" id="vie-Yf-xOt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CuF-9r-ByG" firstAttribute="centerX" secondItem="Djb-zd-7Mx" secondAttribute="centerX" id="1H9-ry-FCl"/>
+                            <constraint firstItem="CuF-9r-ByG" firstAttribute="width" secondItem="ZiE-sG-cgL" secondAttribute="width" id="GIP-jr-SaV"/>
+                            <constraint firstItem="CuF-9r-ByG" firstAttribute="top" secondItem="Djb-zd-7Mx" secondAttribute="top" id="JgT-7Q-zRr"/>
+                            <constraint firstItem="xXK-2f-mdT" firstAttribute="top" secondItem="CuF-9r-ByG" secondAttribute="bottom" constant="30" id="RlN-P7-UDX"/>
+                            <constraint firstItem="Djb-zd-7Mx" firstAttribute="bottom" secondItem="xXK-2f-mdT" secondAttribute="bottom" id="aKA-WS-nTs"/>
+                            <constraint firstItem="xXK-2f-mdT" firstAttribute="width" secondItem="CuF-9r-ByG" secondAttribute="width" id="ipo-af-87d"/>
+                            <constraint firstItem="llf-kg-lin" firstAttribute="width" secondItem="CuF-9r-ByG" secondAttribute="width" multiplier="0.95" id="mdU-vl-ihz"/>
+                            <constraint firstItem="xXK-2f-mdT" firstAttribute="centerX" secondItem="CuF-9r-ByG" secondAttribute="centerX" id="rcD-ff-XTp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Djb-zd-7Mx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lta-Lr-1JQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3116" y="141.67916041979012"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c6n-Jd-8PG">
+            <objects>
+                <viewController id="j8l-Jv-otg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sWE-Nl-HsD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5G-dC-jGK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vIp-8a-SHh"/>
+                                </constraints>
+                                <state key="normal" title="JAVA">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5m2-Cl-hRj">
+                                <rect key="frame" x="0.0" y="134" width="375" height="533"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZR-Ag-Tbt">
+                                        <rect key="frame" x="10" y="30" width="356.5" height="5275"/>
+                                        <string key="text">Q1. What is the difference between an Inner Class and a Sub-Class?
+
+Ans: An Inner class is a class which is nested within another class. An Inner class has access rights for the class which is nesting it and it can access all variables and methods defined in the outer class.
+
+A sub-class is a class which inherits from another class called super class. Sub-class can access all public and protected methods and fields of its super class.
+
+Q2. What are the various access specifiers for Java classes?
+
+Ans: In Java, access specifiers are the keywords used before a class name which defines the access scope. The types of access specifiers for classes are:
+
+1. Public : Class,Method,Field is accessible from anywhere.
+
+2. Protected:Method,Field can be accessed from the same class to which they belong or from the sub-classes,and from the class of same package,but not from outside.
+
+3. Default: Method,Field,class can be accessed only from the same package and not from outside of it's native package.
+
+4. Private: Method,Field can be accessed from the same class to which they belong.
+
+Q3. What's the purpose of Static methods and static variables?
+
+Ans: When there is a requirement to share a method or a variable between multiple objects of a class instead of creating separate copies for each object, we use static keyword to make a method or variable shared for all objects.
+
+Q4. What is data encapsulation and what's its significance?
+
+Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a single unit.
+
+Encapsulation helps programmers to follow a modular approach for software development as each object has its own set of methods and variables and serves its functions independent of other objects. Encapsulation also serves data hiding purpose.
+
+
+
+Q5. What is a singleton class? Give a practical example of its usage.
+
+A singleton class in java can have only one instance and hence all its methods and variables belong to just one instance. Singleton class concept is useful for the situations when there is a need to limit the number of objects for a class.
+
+The best example of singleton usage scenario is when there is a limit of having only one connection to a database due to some driver limitations or because of any licensing issues.
+
+Q6. What are Loops in Java? What are three types of loops?
+
+Ans: Looping is used in programming to execute a statement or a block of statement repeatedly. There are three types of loops in Java:
+
+1) For Loops
+
+For loops are used in java to execute statements repeatedly for a given number of times. For loops are used when number of times to execute the statements is known to programmer.
+
+2) While Loops
+
+While loop is used when certain statements need to be executed repeatedly until a condition is fulfilled. In while loops, condition is checked first before execution of statements.
+
+3) Do While Loops
+
+Do While Loop is same as While loop with only difference that condition is checked after execution of block of statements. Hence in case of do while loop, statements are executed at least once.
+
+Q7: What is an infinite Loop? How infinite loop is declared?
+
+Ans: An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken by defining any breaking logic in the body of the statement blocks.
+
+Infinite loop is declared as follows:
+
+for (;;)
+{
+    // Statements to execute
+
+    // Add any loop breaking logic
+}
+Q8. What is the difference between continue and break statement?
+
+Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop, loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues with next iteration.
+
+In below example, Loop is broken when counter reaches 4.
+
+for (counter = 0; counter &amp; lt; 10; counter++)
+    system.out.println(counter);
+
+if (counter == 4) {
+
+    break;
+}
+
+}
+In the below example when counter reaches 4, loop jumps to next iteration and any statements after the continue keyword are skipped for current iteration.
+
+for (counter = 0; counter &lt; 10; counter++)
+    system.out.println(counter);
+
+if (counter == 4) {
+
+    continue;
+}
+system.out.println("This will not get printed when counter is 4");
+}
+Q9. What is the difference between double and float variables in Java?
+
+Ans: In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single precision floating point decimal number while Double is double precision decimal number.
+
+Q10. What is Final Keyword in Java? Give an example.
+
+Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after assignment, value of a constant can't be changed.
+
+In below example, a constant with the name const_val is declared and assigned avalue:
+
+Private Final int const_val=100
+
+When a method is declared as final,it can NOT be overridden by the subclasses.This method are faster than any other method,because they are resolved at complied time.
+
+When a class is declares as final,it cannot be subclassed. Example String,Integer and other wrapper classes.
+
+Q11. What is ternary operator? Give an example.
+
+Ans: Ternary operator , also called conditional operator is used to decide which value to assign to a variable based on a Boolean value evaluation. It's denoted as ?
+
+In the below example, if rank is 1, status is assigned a value of "Done" else "Pending".
+
+public class conditionTest {
+    public static void main(String args[]) {
+        String status;
+        int rank = 3;
+        status = (rank == 1) ? "Done" : "Pending";
+        System.out.println(status);
+    }
+}
+Q12: How can you generate random numbers in Java?
+
+Ans:
+
+Using Math.random() you can generate random numbers in the range greater than or equal to 0.1 and less than 1.0
+Using Random class in package java.util
+Q13. What is default switch case? Give example.
+
+Ans: In a switch statement, default case is executed when no other switch condition matches. Default case is an optional case .It can be declared only once all other switch cases have been coded.
+
+In the below example, when score is not 1 or 2, default case is used.
+
+public class switchExample {
+    int score = 4;
+    public static void main(String args[]) {
+        switch (score) {
+            case 1:
+                system.out.println("Score is 1");
+                break;
+            case 2:
+                system.out.println("Score is 2");
+                break;
+            default:
+                system.out.println("Default Case");
+        }
+    }
+}
+Q14. What's the base class in Java from which all classes are derived?
+
+Ans: java.lang.object
+
+Q15. Can main() method in Java can return any data?
+
+Ans: In java, main() method can't return any data and hence, it's always declared with a void return type.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17302721360000001" green="0.1772488773" blue="0.18397830309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zZR-Ag-Tbt" secondAttribute="bottom" constant="30" id="AMw-IN-CMC"/>
+                                    <constraint firstItem="zZR-Ag-Tbt" firstAttribute="leading" secondItem="5m2-Cl-hRj" secondAttribute="leading" constant="10" id="UXY-1f-oXL"/>
+                                    <constraint firstItem="zZR-Ag-Tbt" firstAttribute="top" secondItem="5m2-Cl-hRj" secondAttribute="top" constant="30" id="bX5-4j-tBd"/>
+                                    <constraint firstAttribute="trailing" secondItem="zZR-Ag-Tbt" secondAttribute="trailing" constant="10" id="yqT-Lq-UcQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xn2-Xw-zYq" firstAttribute="bottom" secondItem="5m2-Cl-hRj" secondAttribute="bottom" id="1kX-yQ-AUZ"/>
+                            <constraint firstItem="5m2-Cl-hRj" firstAttribute="top" secondItem="U5G-dC-jGK" secondAttribute="bottom" constant="20" id="A3j-ey-Jsu"/>
+                            <constraint firstItem="5m2-Cl-hRj" firstAttribute="centerX" secondItem="U5G-dC-jGK" secondAttribute="centerX" id="NfN-Ob-cRT"/>
+                            <constraint firstItem="5m2-Cl-hRj" firstAttribute="width" secondItem="U5G-dC-jGK" secondAttribute="width" id="OAM-K7-yag"/>
+                            <constraint firstItem="zZR-Ag-Tbt" firstAttribute="width" secondItem="U5G-dC-jGK" secondAttribute="width" multiplier="0.95" id="b0l-Ci-IbE"/>
+                            <constraint firstItem="U5G-dC-jGK" firstAttribute="top" secondItem="xn2-Xw-zYq" secondAttribute="top" id="cff-w7-IxC"/>
+                            <constraint firstItem="U5G-dC-jGK" firstAttribute="centerX" secondItem="xn2-Xw-zYq" secondAttribute="centerX" id="iWH-hu-Zn3"/>
+                            <constraint firstItem="U5G-dC-jGK" firstAttribute="width" secondItem="sWE-Nl-HsD" secondAttribute="width" id="s0f-IA-UuT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xn2-Xw-zYq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGR-zR-ov4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407.1999999999998" y="131.78410794602701"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gW1-za-8dk">
+            <objects>
+                <viewController id="yTL-HU-pAD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Hw-84-s0U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU3-JU-5SA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LEu-Co-GL7"/>
+                                </constraints>
+                                <state key="normal" title="Java">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55o-Rv-131">
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0v-i4-beH">
+                                        <rect key="frame" x="10" y="30" width="356.5" height="5275"/>
+                                        <string key="text">Q1. What is the difference between an Inner Class and a Sub-Class?
+
+Ans: An Inner class is a class which is nested within another class. An Inner class has access rights for the class which is nesting it and it can access all variables and methods defined in the outer class.
+
+A sub-class is a class which inherits from another class called super class. Sub-class can access all public and protected methods and fields of its super class.
+
+Q2. What are the various access specifiers for Java classes?
+
+Ans: In Java, access specifiers are the keywords used before a class name which defines the access scope. The types of access specifiers for classes are:
+
+1. Public : Class,Method,Field is accessible from anywhere.
+
+2. Protected:Method,Field can be accessed from the same class to which they belong or from the sub-classes,and from the class of same package,but not from outside.
+
+3. Default: Method,Field,class can be accessed only from the same package and not from outside of it's native package.
+
+4. Private: Method,Field can be accessed from the same class to which they belong.
+
+Q3. What's the purpose of Static methods and static variables?
+
+Ans: When there is a requirement to share a method or a variable between multiple objects of a class instead of creating separate copies for each object, we use static keyword to make a method or variable shared for all objects.
+
+Q4. What is data encapsulation and what's its significance?
+
+Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a single unit.
+
+Encapsulation helps programmers to follow a modular approach for software development as each object has its own set of methods and variables and serves its functions independent of other objects. Encapsulation also serves data hiding purpose.
+
+
+
+Q5. What is a singleton class? Give a practical example of its usage.
+
+A singleton class in java can have only one instance and hence all its methods and variables belong to just one instance. Singleton class concept is useful for the situations when there is a need to limit the number of objects for a class.
+
+The best example of singleton usage scenario is when there is a limit of having only one connection to a database due to some driver limitations or because of any licensing issues.
+
+Q6. What are Loops in Java? What are three types of loops?
+
+Ans: Looping is used in programming to execute a statement or a block of statement repeatedly. There are three types of loops in Java:
+
+1) For Loops
+
+For loops are used in java to execute statements repeatedly for a given number of times. For loops are used when number of times to execute the statements is known to programmer.
+
+2) While Loops
+
+While loop is used when certain statements need to be executed repeatedly until a condition is fulfilled. In while loops, condition is checked first before execution of statements.
+
+3) Do While Loops
+
+Do While Loop is same as While loop with only difference that condition is checked after execution of block of statements. Hence in case of do while loop, statements are executed at least once.
+
+Q7: What is an infinite Loop? How infinite loop is declared?
+
+Ans: An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken by defining any breaking logic in the body of the statement blocks.
+
+Infinite loop is declared as follows:
+
+for (;;)
+{
+    // Statements to execute
+
+    // Add any loop breaking logic
+}
+Q8. What is the difference between continue and break statement?
+
+Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop, loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues with next iteration.
+
+In below example, Loop is broken when counter reaches 4.
+
+for (counter = 0; counter &amp; lt; 10; counter++)
+    system.out.println(counter);
+
+if (counter == 4) {
+
+    break;
+}
+
+}
+In the below example when counter reaches 4, loop jumps to next iteration and any statements after the continue keyword are skipped for current iteration.
+
+for (counter = 0; counter &lt; 10; counter++)
+    system.out.println(counter);
+
+if (counter == 4) {
+
+    continue;
+}
+system.out.println("This will not get printed when counter is 4");
+}
+Q9. What is the difference between double and float variables in Java?
+
+Ans: In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single precision floating point decimal number while Double is double precision decimal number.
+
+Q10. What is Final Keyword in Java? Give an example.
+
+Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after assignment, value of a constant can't be changed.
+
+In below example, a constant with the name const_val is declared and assigned avalue:
+
+Private Final int const_val=100
+
+When a method is declared as final,it can NOT be overridden by the subclasses.This method are faster than any other method,because they are resolved at complied time.
+
+When a class is declares as final,it cannot be subclassed. Example String,Integer and other wrapper classes.
+
+Q11. What is ternary operator? Give an example.
+
+Ans: Ternary operator , also called conditional operator is used to decide which value to assign to a variable based on a Boolean value evaluation. It's denoted as ?
+
+In the below example, if rank is 1, status is assigned a value of "Done" else "Pending".
+
+public class conditionTest {
+    public static void main(String args[]) {
+        String status;
+        int rank = 3;
+        status = (rank == 1) ? "Done" : "Pending";
+        System.out.println(status);
+    }
+}
+Q12: How can you generate random numbers in Java?
+
+Ans:
+
+Using Math.random() you can generate random numbers in the range greater than or equal to 0.1 and less than 1.0
+Using Random class in package java.util
+Q13. What is default switch case? Give example.
+
+Ans: In a switch statement, default case is executed when no other switch condition matches. Default case is an optional case .It can be declared only once all other switch cases have been coded.
+
+In the below example, when score is not 1 or 2, default case is used.
+
+public class switchExample {
+    int score = 4;
+    public static void main(String args[]) {
+        switch (score) {
+            case 1:
+                system.out.println("Score is 1");
+                break;
+            case 2:
+                system.out.println("Score is 2");
+                break;
+            default:
+                system.out.println("Default Case");
+        }
+    }
+}
+Q14. What's the base class in Java from which all classes are derived?
+
+Ans: java.lang.object
+
+Q15. Can main() method in Java can return any data?
+
+Ans: In java, main() method can't return any data and hence, it's always declared with a void return type.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17302721360000001" green="0.1772488773" blue="0.18397830309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="B0v-i4-beH" secondAttribute="bottom" constant="30" id="dGR-Rg-yzM"/>
+                                    <constraint firstAttribute="trailing" secondItem="B0v-i4-beH" secondAttribute="trailing" constant="10" id="jhl-LZ-xwC"/>
+                                    <constraint firstItem="B0v-i4-beH" firstAttribute="top" secondItem="55o-Rv-131" secondAttribute="top" constant="30" id="pvE-wj-3bS"/>
+                                    <constraint firstItem="B0v-i4-beH" firstAttribute="leading" secondItem="55o-Rv-131" secondAttribute="leading" constant="10" id="rjg-TO-Q6p"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="55o-Rv-131" firstAttribute="centerX" secondItem="wU3-JU-5SA" secondAttribute="centerX" id="Bld-aa-7pu"/>
+                            <constraint firstItem="B0v-i4-beH" firstAttribute="width" secondItem="wU3-JU-5SA" secondAttribute="width" multiplier="0.95" id="F9y-6q-Yky"/>
+                            <constraint firstItem="55o-Rv-131" firstAttribute="top" secondItem="wU3-JU-5SA" secondAttribute="bottom" constant="20" id="QnP-j3-CkX"/>
+                            <constraint firstItem="wU3-JU-5SA" firstAttribute="centerX" secondItem="8az-Ac-4bH" secondAttribute="centerX" id="T4T-wG-8jw"/>
+                            <constraint firstItem="wU3-JU-5SA" firstAttribute="top" secondItem="8az-Ac-4bH" secondAttribute="top" id="Xns-gi-0gz"/>
+                            <constraint firstItem="8az-Ac-4bH" firstAttribute="bottom" secondItem="55o-Rv-131" secondAttribute="bottom" id="diF-ZF-Sey"/>
+                            <constraint firstItem="55o-Rv-131" firstAttribute="width" secondItem="wU3-JU-5SA" secondAttribute="width" id="hla-Na-wGu"/>
+                            <constraint firstItem="wU3-JU-5SA" firstAttribute="width" secondItem="2Hw-84-s0U" secondAttribute="width" id="x2k-mf-f6s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8az-Ac-4bH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6s1-12-qft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407.1999999999998" y="131.78410794602701"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RF4-jF-Akl">
+            <objects>
+                <viewController id="9Fp-O0-3Kd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hqo-JI-Nio">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-Kg-uj3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c9Q-uy-rBC"/>
+                                </constraints>
+                                <state key="normal" title="C Language">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlS-uz-424">
+                                <rect key="frame" x="0.0" y="144" width="375" height="523"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiG-hb-uYm">
+                                        <rect key="frame" x="10" y="30" width="356.5" height="4382.5"/>
+                                        <string key="text">Q #1) What are the key features in C programming language?
+
+Portability – Platform independent language.
+Modularity – Possibility to break down large programs into small modules.
+Flexibility – The possibility to a programmer to control the language.
+Speed – C comes with support for system programming and hence it is compiling and executes with high speed when comparing with other high-level languages.
+Extensibility – Possibility to add new features by the programmer.
+Q #2) What are the basic data types associated with C?
+
+Int – Represent number (integer)
+Float – Number with a fraction part.
+Double – Double-precision floating point value
+Char – Single character
+Void – Special purpose type without any value.
+Q #3) What is the description for syntax errors?
+
+Ans) The mistakes when creating a program called syntax errors. Misspelled commands or incorrect case commands, an incorrect number of parameters when called a method /function, data type mismatches can identify as common examples for syntax errors.
+
+Q #4) What is the process to create increment and decrement stamen in C?
+
+Ans) There are two possible methods to perform this task.
+
+1) Use increment (++) and decrement (-) operator.
+
+Example When x=4, x++ returns 5 and x- returns 3.
+
+2) Use conventional + or – sign.
+
+When x=4, use x+1 to get 5 and x-1 to get 3.
+
+Q #5) What are reserved words with a programming language?
+
+Ans) The words that are part of the slandered C language library are called reserved words. Those reserved words have special meaning and it is not possible to use them for any activity other than its intended functionality.
+
+Example void, return, int.
+
+Q #6) What is the explanation for the dangling pointer in C?
+
+Ans) When there is a pointer with pointing to a memory address of any variable, but after some time the variable was deleted from the memory location while keeping the pointer pointing to that location.
+
+Q #7) Describe static function with its usage?
+
+Ans) A function, which has a function definition prefixed with a static keyword is defined as a static function. The static function should call within the same source code.
+
+Q #8) What is the difference between abs() and fabs() functions?
+
+Ans) Both functions are to retrieve absolute value. abs() is for integer values and fabs() is for floating type numbers. Prototype for abs() is under the library file &lt; stdlib.h &gt; and fabs() is under &lt; math.h &gt;.
+
+Q #9) Describe Wild Pointers in C?
+
+Ans) Uninitialized pointers in the C code are known as Wild Pointers. These are a point to some arbitrary memory location and can cause bad program behavior or program crash.
+
+Q #10) What is the difference between ++a and a++?
+
+Ans) ‘++a”  is called prefixed increment and the increment will happen first on a variable. ‘a++' is called postfix increment and the increment happens after the value of a variable used for the operations.
+
+Q #11) Describe the difference between = and == symbols in C programming?
+
+Ans) ‘==' is the comparison operator which is use to compare the value or expression on the left-hand side with the value or expression on the right-hand side.
+
+‘=' is the assignment operator which is use to assign the value of the right-hand side to the variable on the left-hand side.
+
+Q #12) What is the explanation for prototype function in C?
+
+Prototype function is a declaration of a function with the following information to the compiler.
+
+Name of the function.
+The return type of the function.
+Parameters list of the function.
+prototype function in C
+
+In this example Name of the function is Sum, the return type is integer data type and it accepts two integer parameters.
+
+Q #13) What is the explanation for cyclic nature of data types in C?
+
+Ans) Some of the data types in C have special characteristic nature when a developer assign value beyond the range of the data type. There will be no any compiler error and the value change according to a cyclic order. This is called as cyclic nature and Char, int, long int data types have this property. Further float, double and long double data types do not have this property.
+
+This is called as cyclic nature and Char, int, long int data types have this property. Further float, double and long double data types do not have this property.
+
+Q #14) Describe the header file and its usage in C programming?
+
+Ans) The file contains the definitions and prototypes of the functions being used in the program are called a header file. It is also known as a library file.
+
+Example– The header file contains commands like printf and scanf is the stdio.h.
+
+Q #15) There is a practice in coding to keep some code blocks in comment symbols than delete it when debugging. How this affect when debugging?
+
+Ans) This concept called as commenting out and is the way to isolate some part of the code which scans possible reason for the error. Also, this concept helps to save time because if the code is not the reason for the issue it can simply uncomment.
+
+Q #16) What are the general description for loop statement and available loop types in C?
+
+Ans) A statement that allows executing statement or group of statements in repeated way is defined as a loop. Following diagram explains
+
+Following diagram explains a general form of a loop.
+
+loop statement
+
+There are 4 types of a loop statement in C.
+
+While loop
+For Loop
+Do…While Loop
+Nested Loop
+Q #17) What is a nested loop?
+
+Ans) A loop running within another loop is referred as a nested loop. The first loop is called Outer loop and inside the loop is called Inner loop. Inner loop executes the number of times define an outer loop.
+
+Q #18) What is the general form of function in C?
+
+Ans) Function definition in C contains four main sections.
+
+function in C
+
+Return Type -&gt; Data type of the return value of the function.
+Function Name -&gt; The name of the function and it is important to have a meaningful name that describes the activity of the function.
+Parameters -&gt; The input values for the function that need to use perform the required action.
+Function Body -&gt; Collection of statement that needs to perform the required action.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17302721360000001" green="0.1772488773" blue="0.18397830309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DiG-hb-uYm" firstAttribute="top" secondItem="mlS-uz-424" secondAttribute="top" constant="30" id="890-Qn-HLb"/>
+                                    <constraint firstItem="DiG-hb-uYm" firstAttribute="leading" secondItem="mlS-uz-424" secondAttribute="leading" constant="10" id="Acr-M9-kuu"/>
+                                    <constraint firstAttribute="trailing" secondItem="DiG-hb-uYm" secondAttribute="trailing" constant="10" id="gDZ-bt-jqJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="DiG-hb-uYm" secondAttribute="bottom" constant="30" id="rEh-gw-g9Y"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D4d-Kg-uj3" firstAttribute="width" secondItem="Hqo-JI-Nio" secondAttribute="width" id="04T-6A-tSK"/>
+                            <constraint firstItem="mlS-uz-424" firstAttribute="width" secondItem="D4d-Kg-uj3" secondAttribute="width" id="0Rw-ee-QhT"/>
+                            <constraint firstItem="NwJ-KL-Tnb" firstAttribute="bottom" secondItem="mlS-uz-424" secondAttribute="bottom" id="12m-wb-fwk"/>
+                            <constraint firstItem="mlS-uz-424" firstAttribute="top" secondItem="D4d-Kg-uj3" secondAttribute="bottom" constant="30" id="Me0-2m-5Qo"/>
+                            <constraint firstItem="mlS-uz-424" firstAttribute="centerX" secondItem="D4d-Kg-uj3" secondAttribute="centerX" id="O25-He-OdD"/>
+                            <constraint firstItem="D4d-Kg-uj3" firstAttribute="centerX" secondItem="NwJ-KL-Tnb" secondAttribute="centerX" id="j4b-ep-dD1"/>
+                            <constraint firstItem="DiG-hb-uYm" firstAttribute="width" secondItem="D4d-Kg-uj3" secondAttribute="width" multiplier="0.95" id="vA5-8i-usb"/>
+                            <constraint firstItem="D4d-Kg-uj3" firstAttribute="top" secondItem="NwJ-KL-Tnb" secondAttribute="top" id="w6h-sq-o56"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NwJ-KL-Tnb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltr-3e-ipi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3796" y="140.77961019490255"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d4C-vw-9hD">
+            <objects>
+                <viewController id="ohN-NK-27O" customClass="ViewController" customModule="quiz_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vJD-Zb-eNW"/>
+                        <viewControllerLayoutGuide type="bottom" id="U84-LB-zuV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Glk-u2-i9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ea-SQ-Aoq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L3-e4-y8c" userLabel="Question Label">
+                                        <rect key="frame" x="16" y="28" width="343" height="290"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="345" id="Eb6-qN-ITU"/>
+                                    <constraint firstAttribute="bottom" secondItem="2L3-e4-y8c" secondAttribute="bottom" constant="27" id="K0b-JU-vLK"/>
+                                    <constraint firstItem="2L3-e4-y8c" firstAttribute="leading" secondItem="1Ea-SQ-Aoq" secondAttribute="leading" constant="16" id="NPb-qy-ffe"/>
+                                    <constraint firstItem="2L3-e4-y8c" firstAttribute="top" secondItem="1Ea-SQ-Aoq" secondAttribute="top" constant="28" id="Uhb-Xf-bvU"/>
+                                    <constraint firstAttribute="trailing" secondItem="2L3-e4-y8c" secondAttribute="trailing" constant="16" id="ZqI-D8-IUP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfG-4W-RzY">
+                                <rect key="frame" x="0.0" y="620" width="375" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 9999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbC-tG-8rc">
+                                        <rect key="frame" x="251" y="0.0" width="116" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="1Bl-bS-sQS"/>
+                                            <constraint firstAttribute="height" constant="21" id="K66-f8-3kR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGL-NV-N5v">
+                                        <rect key="frame" x="8" y="0.0" width="52" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="VrQ-d9-1Wg"/>
+                                            <constraint firstAttribute="height" constant="21" id="eRN-IO-zWk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vw-zS-LuJ">
+                                        <rect key="frame" x="0.0" y="25" width="24" height="14"/>
+                                        <color key="backgroundColor" red="0.92549019610000005" green="0.72941176470000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="Wzs-2G-0DZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KGL-NV-N5v" firstAttribute="left" secondItem="FfG-4W-RzY" secondAttribute="left" constant="8" id="1VP-dn-bW9"/>
+                                    <constraint firstItem="5Vw-zS-LuJ" firstAttribute="top" secondItem="KGL-NV-N5v" secondAttribute="bottom" constant="4" id="3iO-XF-jyw"/>
+                                    <constraint firstItem="QbC-tG-8rc" firstAttribute="left" relation="greaterThanOrEqual" secondItem="KGL-NV-N5v" secondAttribute="right" constant="20" id="CjT-hF-DHn"/>
+                                    <constraint firstAttribute="right" secondItem="QbC-tG-8rc" secondAttribute="right" constant="8" id="FoW-ux-1Mk"/>
+                                    <constraint firstItem="KGL-NV-N5v" firstAttribute="top" secondItem="FfG-4W-RzY" secondAttribute="top" id="LjN-jd-IK6"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Vw-zS-LuJ" secondAttribute="bottom" constant="8" id="Sst-x0-I6Z"/>
+                                    <constraint firstItem="5Vw-zS-LuJ" firstAttribute="leading" secondItem="FfG-4W-RzY" secondAttribute="leading" id="YRy-hQ-aAk"/>
+                                    <constraint firstAttribute="height" constant="47" id="bv7-qh-nyY"/>
+                                    <constraint firstItem="QbC-tG-8rc" firstAttribute="top" secondItem="FfG-4W-RzY" secondAttribute="top" id="dSX-hj-grH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ose-OH-Hi2" userLabel="Lower Contianer">
+                                <rect key="frame" x="0.0" y="345" width="375" height="275"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jd-8U-kjl" userLabel="False Button">
+                                        <rect key="frame" x="194.5" y="109.5" width="155.5" height="56"/>
+                                        <color key="backgroundColor" red="0.78738981490000004" green="0.2464441359" blue="0.27221894260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="False">
+                                            <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="ohN-NK-27O" eventType="touchUpInside" id="7RC-bk-kOb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MST-EI-hyW" userLabel="True Button">
+                                        <rect key="frame" x="25" y="109.5" width="155.5" height="56"/>
+                                        <color key="backgroundColor" red="0.19115509089999999" green="0.63786703349999996" blue="0.26147949700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="2cR-jS-7dn"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="qEQ-O7-WBe"/>
+                                        </constraints>
+                                        <state key="normal" title="True">
+                                            <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="ohN-NK-27O" eventType="touchUpInside" id="uF7-wZ-XJ7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MST-EI-hyW" firstAttribute="height" secondItem="0jd-8U-kjl" secondAttribute="height" id="CZK-id-qBR"/>
+                                    <constraint firstItem="MST-EI-hyW" firstAttribute="left" secondItem="ose-OH-Hi2" secondAttribute="left" constant="25" id="Fo4-JK-vRh"/>
+                                    <constraint firstItem="MST-EI-hyW" firstAttribute="centerY" secondItem="ose-OH-Hi2" secondAttribute="centerY" id="IqR-z6-nAb"/>
+                                    <constraint firstItem="0jd-8U-kjl" firstAttribute="centerY" secondItem="ose-OH-Hi2" secondAttribute="centerY" id="Q3V-co-vJI"/>
+                                    <constraint firstAttribute="right" secondItem="0jd-8U-kjl" secondAttribute="right" constant="25" id="TJc-nk-uye"/>
+                                    <constraint firstItem="MST-EI-hyW" firstAttribute="width" secondItem="0jd-8U-kjl" secondAttribute="width" id="a5W-Ra-Ar6"/>
+                                    <constraint firstItem="0jd-8U-kjl" firstAttribute="leading" secondItem="MST-EI-hyW" secondAttribute="trailing" constant="14" id="b64-Ym-ZR5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ose-OH-Hi2" firstAttribute="top" secondItem="1Ea-SQ-Aoq" secondAttribute="bottom" id="EwL-Ip-0fj"/>
+                            <constraint firstItem="FfG-4W-RzY" firstAttribute="leading" secondItem="Glk-u2-i9f" secondAttribute="leading" id="Fpt-aa-wxE"/>
+                            <constraint firstItem="ose-OH-Hi2" firstAttribute="top" secondItem="1Ea-SQ-Aoq" secondAttribute="bottom" id="XHY-bV-5AR"/>
+                            <constraint firstItem="ose-OH-Hi2" firstAttribute="leading" secondItem="Glk-u2-i9f" secondAttribute="leading" id="aig-2H-Nt8"/>
+                            <constraint firstItem="FfG-4W-RzY" firstAttribute="top" secondItem="ose-OH-Hi2" secondAttribute="bottom" id="hfg-kv-uJs"/>
+                            <constraint firstItem="FfG-4W-RzY" firstAttribute="top" secondItem="ose-OH-Hi2" secondAttribute="bottom" id="lbp-zW-ld5"/>
+                            <constraint firstItem="1Ea-SQ-Aoq" firstAttribute="top" secondItem="Glk-u2-i9f" secondAttribute="top" id="mvg-p3-c6w"/>
+                            <constraint firstItem="1Ea-SQ-Aoq" firstAttribute="leading" secondItem="Glk-u2-i9f" secondAttribute="leading" id="qOJ-qP-ZKR"/>
+                            <constraint firstAttribute="trailing" secondItem="FfG-4W-RzY" secondAttribute="trailing" id="tTY-Wj-tmg"/>
+                            <constraint firstAttribute="trailing" secondItem="ose-OH-Hi2" secondAttribute="trailing" id="x0v-dh-XeK"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ea-SQ-Aoq" secondAttribute="trailing" id="xjf-MF-njT"/>
+                            <constraint firstItem="U84-LB-zuV" firstAttribute="top" secondItem="FfG-4W-RzY" secondAttribute="bottom" id="zdh-et-9H5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bh5-Gs-Cec"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressBar" destination="5Vw-zS-LuJ" id="ieL-ee-Lc1"/>
+                        <outlet property="progressLabel" destination="KGL-NV-N5v" id="6Iu-kc-9KI"/>
+                        <outlet property="questionLabel" destination="2L3-e4-y8c" id="AfV-kB-r5O"/>
+                        <outlet property="scoreLabel" destination="QbC-tG-8rc" id="cdF-3M-R3n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wow-H1-VOv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="815"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JJO-kd-DAF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jvn-dc-QyV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rNY-OL-gyd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vIJ-nH-48h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAO-Rt-7vX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="129.98500749625188"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="FNt-6k-P1T">
+            <objects>
+                <viewController id="HEo-e3-Po8" customClass="QuizViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XlJ-OQ-cE0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdV-gb-yxw">
+                                <rect key="frame" x="56.5" y="340.5" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Iwo-4n-k7r"/>
+                                </constraints>
+                                <state key="normal" title="PHP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="phpButtonTouched:" destination="HEo-e3-Po8" eventType="touchUpInside" id="Nol-t8-oQb"/>
+                                    <segue destination="ohN-NK-27O" kind="show" identifier="php" id="TP9-yc-Mjr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHV-rJ-FcC">
+                                <rect key="frame" x="56.5" y="403" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OWj-GI-Fib"/>
+                                </constraints>
+                                <state key="normal" title="C Language">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClangButtonTouched:" destination="HEo-e3-Po8" eventType="touchUpInside" id="6Na-np-VP2"/>
+                                    <segue destination="ohN-NK-27O" kind="show" identifier="c" id="UOf-db-b2p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U2-mJ-qG6">
+                                <rect key="frame" x="56.5" y="275" width="262.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ehy-yQ-Ixz"/>
+                                </constraints>
+                                <state key="normal" title="JAVA">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="javaButtonTouched:" destination="HEo-e3-Po8" eventType="touchUpInside" id="Blh-2D-fQP"/>
+                                    <segue destination="ohN-NK-27O" kind="show" identifier="java" id="6xc-Tb-P6v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZdV-gb-yxw" firstAttribute="centerX" secondItem="QbB-Md-5ak" secondAttribute="centerX" id="9WD-8s-XiX"/>
+                            <constraint firstItem="ZdV-gb-yxw" firstAttribute="width" secondItem="XlJ-OQ-cE0" secondAttribute="width" multiplier="0.7" id="QJe-qs-lPu"/>
+                            <constraint firstItem="kHV-rJ-FcC" firstAttribute="width" secondItem="ZdV-gb-yxw" secondAttribute="width" id="acK-g8-qn8"/>
+                            <constraint firstItem="kHV-rJ-FcC" firstAttribute="top" secondItem="ZdV-gb-yxw" secondAttribute="bottom" constant="12.5" id="etB-av-peN"/>
+                            <constraint firstItem="ZdV-gb-yxw" firstAttribute="centerY" secondItem="QbB-Md-5ak" secondAttribute="centerY" id="qiv-f4-YjX"/>
+                            <constraint firstItem="kHV-rJ-FcC" firstAttribute="centerX" secondItem="ZdV-gb-yxw" secondAttribute="centerX" id="sq1-7d-CVl"/>
+                            <constraint firstItem="1U2-mJ-qG6" firstAttribute="centerX" secondItem="ZdV-gb-yxw" secondAttribute="centerX" id="sxK-jj-XLK"/>
+                            <constraint firstItem="1U2-mJ-qG6" firstAttribute="width" secondItem="ZdV-gb-yxw" secondAttribute="width" id="ucm-I4-Caa"/>
+                            <constraint firstItem="ZdV-gb-yxw" firstAttribute="top" secondItem="1U2-mJ-qG6" secondAttribute="bottom" constant="15.5" id="um0-TJ-7kf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QbB-Md-5ak"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdK-Xb-lBP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="750"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Java-vs-PHP-for-Enterprise-Application-Development.jpg" width="1141" height="503"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="UOf-db-b2p"/>
+    </inferredMetricsTieBreakers>
+</document>
